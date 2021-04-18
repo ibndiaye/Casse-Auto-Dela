@@ -18,7 +18,7 @@
 
   <!-- Additional CSS Files -->
   <link rel="stylesheet" href="assets/css/fontawesome.css">
-  <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="assets/css/owl.css">
 
 </head>
@@ -137,7 +137,7 @@
     </div>
   </div>
 
-  <!-- <div class="callback-form contact-us">
+  <div class="callback-form contact-us">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -148,7 +148,9 @@
         </div>
         <div class="col-md-12">
           <div class="contact-form">
-            <form id="contact" action="" method="get">
+            <form id="contact"
+              action="https://script.google.com/macros/s/AKfycbxqWEjLkyH9BTOA9ANXb0N6HUTeCEMuxzJgFFjsaIhar2o-sxoe/exec"
+              method="POST" class="gform">
               <div class="row">
                 <div class="col-lg-4 col-md-12 col-sm-12">
                   <fieldset>
@@ -177,6 +179,11 @@
                   <fieldset>
                     <button type="submit" id="form-submit" class="filled-button">Envoyer</button>
                   </fieldset>
+                  <div style="display:none" class="thankyou_message">
+                    <!-- You can customize the thankyou message by editing the code below -->
+                    <h2>Merci de nous avoir contacté!
+                    </h2>
+                  </div>
                 </div>
               </div>
             </form>
@@ -184,7 +191,7 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
 
   <div id="map">
     <!-- How to change your own map point
@@ -250,10 +257,11 @@
           </ul>
         </div>
         <div class="col-md-3 footer-item last-item">
-          <h4>Contact Us</h4>
+          <h4>Formulaire de Contact</h4>
           <div class="contact-form">
-            <form id="contact footer-contact" action="mailto:casseautodela@gmail.com" method="post"
-              enctype=”multipart/form-data” name="formmail">
+            <form id="contact footer-contact"
+              action="https://script.google.com/macros/s/AKfycbxqWEjLkyH9BTOA9ANXb0N6HUTeCEMuxzJgFFjsaIhar2o-sxoe/exec"
+              method="POST" enctype=”multipart/form-data” name="formmail" class="gform">
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12">
                   <fieldset>
@@ -276,6 +284,11 @@
                   <fieldset>
                     <button type="submit" id="form-submit" class="filled-button">Send Message</button>
                   </fieldset>
+                  <div style="display:none" class="thankyou_message">
+                    <!-- You can customize the thankyou message by editing the code below -->
+                    <h4>Merci de nous avoir contacté!
+                    </h4>
+                  </div>
                 </div>
               </div>
             </form>
@@ -304,6 +317,7 @@
   <script src="assets/js/owl.js"></script>
   <script src="assets/js/slick.js"></script>
   <script src="assets/js/accordions.js"></script>
+  <script data-cfasync="false" type="text/javascript" src="/assets/js/form-submission-handler.js"></script>
 
   <script language="text/Javascript">
     cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
